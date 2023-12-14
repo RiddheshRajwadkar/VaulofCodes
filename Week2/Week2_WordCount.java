@@ -9,10 +9,15 @@ public class Week2_WordCount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the text:");
-        String text = scanner.nextLine();
+        String sentence = scanner.nextLine();
+        scanner.close();
+        WordFrequency(sentence);
+    }
+
+    public static void WordFrequency(String sentence){
 
         Map<String, Integer> wordCounts = new HashMap<>();
-        for (String word : text.split("\\W+")) {
+        for (String word : sentence.split("\\W+")) {
             word = word.toLowerCase();
             if (!word.isEmpty()) {
                 if (wordCounts.containsKey(word)) {
