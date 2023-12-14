@@ -28,5 +28,6 @@ public class Week2_ListManipulation {
         System.out.println(numbers);
 
         Manipulate(numbers, list);
+        scanner.close();
     }
 }
