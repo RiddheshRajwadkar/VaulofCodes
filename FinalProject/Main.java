@@ -1,3 +1,4 @@
+package FinalProject;
 import javax.swing.JFrame;
 
 public class Main {
